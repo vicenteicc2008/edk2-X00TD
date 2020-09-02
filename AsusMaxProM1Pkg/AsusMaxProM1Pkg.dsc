@@ -16,7 +16,7 @@
 #
 ################################################################################
 [Defines]
-  PLATFORM_NAME                  = RedmiNote7Pkg
+  PLATFORM_NAME                  = AsusMaxProM1Pkg
   PLATFORM_GUID                  = 28f1a3bf-193a-47e3-a7b9-5a435eaab2ee
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010019
@@ -24,13 +24,13 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = RedmiNote7Pkg/RedmiNote7Pkg.fdf
+  FLASH_DEFINITION               = AsusMaxProM1Pkg/AsusMaxProM1Pkg.fdf
 
-!include RedmiNote7Pkg/CommonDsc.dsc.inc
+!include AsusMaxProM1Pkg/CommonDsc.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
-  ArmPlatformLib|RedmiNote7Pkg/Library/RedmiNote7Lib/RedmiNote7Lib.inf
+  ArmPlatformLib|AsusMaxProM1Pkg/Library/AsusMaxProM1Lib/AsusMaxProM1Lib.inf
   CompilerIntrinsicsLib|ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
@@ -43,7 +43,7 @@
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   BootLogoLib|MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf
 
-  SerialPortLib|RedmiNote7Pkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
+  SerialPortLib|AsusMaxProM1Pkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
   RealTimeClockLib|EmbeddedPkg/Library/VirtualRealTimeClockLib/VirtualRealTimeClockLib.inf
   TimeBaseLib|EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
 
@@ -66,9 +66,9 @@
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
 
-  SerialPortLib|RedmiNote7Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
-  PlatformBootManagerLib|RedmiNote7Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
-  PlatformPeiLib|RedmiNote7Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
+  SerialPortLib|AsusMaxProM1Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+  PlatformBootManagerLib|AsusMaxProM1Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+  PlatformPeiLib|AsusMaxProM1Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
 
 [LibraryClasses.common.SEC]
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -137,9 +137,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2160
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -202,8 +202,8 @@
   #
   EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
-  RedmiNote7Pkg/RedmiNote7Dxe/RedmiNote7Dxe.inf
-  RedmiNote7Pkg/SimpleFbDxe/SimpleFbDxe.inf
+  AsusMaxProM1Pkg/AsusMaxProM1Dxe/AsusMaxProM1Dxe.inf
+  AsusMaxProM1Pkg/SimpleFbDxe/SimpleFbDxe.inf
 
   #
   # USB Host Support
@@ -241,12 +241,12 @@
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-#  RedmiNote7Pkg/AcpiTables/AcpiTables.inf
+#  AsusMaxProM1Pkg/AcpiTables/AcpiTables.inf
 
   #
   # SMBIOS Support
   #
-  RedmiNote7Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  AsusMaxProM1Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
 
   #
@@ -269,7 +269,7 @@
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
-  RedmiNote7Pkg/Drivers/LogoDxe/LogoDxe.inf
+  AsusMaxProM1Pkg/Drivers/LogoDxe/LogoDxe.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>

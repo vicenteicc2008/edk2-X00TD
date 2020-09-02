@@ -12,7 +12,7 @@
 
 [Defines]
   INF_VERSION                    = 0x00010019
-  BASE_NAME                      = RedmiNote7Lib
+  BASE_NAME                      = AsusMaxProM1Lib
   FILE_GUID                      = 61620091-45BA-4EFF-8F58-F7ABF228CEBC
   MODULE_TYPE                    = BASE
   VERSION_STRING                 = 1.0
@@ -24,7 +24,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  RedmiNote7Pkg/RedmiNote7Pkg.dec
+  AsusMaxProM1Pkg/AsusMaxProM1Pkg.dec
 
 [LibraryClasses]
   ArmLib
@@ -34,9 +34,9 @@
   SerialPortLib
 
 [Sources.common]
-  RedmiNote7.c
-  RedmiNote7Helper.S
-  RedmiNote7Mem.c
+  AsusMaxProM1.c
+  AsusMaxProM1Helper.S
+  AsusMaxProM1Mem.c
 
 [FixedPcd]
   gArmTokenSpaceGuid.PcdArmPrimaryCore

@@ -1,4 +1,4 @@
-# EDK2 for Xiaomi Redmi Note 7.
+# EDK2 for Asus Zenfone Max Pro M1
 
 Based on fxsheep's port for Xiaomi Mi 6 (sagit) (https://github.com/fxsheep/edk2-sagit/).
 

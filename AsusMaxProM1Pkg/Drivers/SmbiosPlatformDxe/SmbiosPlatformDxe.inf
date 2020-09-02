@@ -37,7 +37,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  RedmiNote7Pkg/RedmiNote7Pkg.dec
+  AsusMaxProM1Pkg/AsusMaxProM1Pkg.dec
 
 [LibraryClasses]
   ArmLib

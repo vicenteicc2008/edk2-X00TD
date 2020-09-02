@@ -39,7 +39,7 @@
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   ShellPkg/ShellPkg.dec
-  RedmiNote7Pkg/RedmiNote7Pkg.dec
+  AsusMaxProM1Pkg/AsusMaxProM1Pkg.dec
 
 [BuildOptions.AARCH64]
   GCC:*_*_*_CC_FLAGS = -Wno-unused-variable

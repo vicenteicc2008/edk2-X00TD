@@ -1,0 +1,30 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = FrameBufferSerialPortLib
+  MODULE_TYPE    = BASE
+  VERSION_STRING = 1.0
+  LIBRARY_CLASS  = SerialPortLib
+
+[Sources.common]
+  FrameBufferSerialPortLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  AsusMaxProM1Pkg/AsusMaxProM1Pkg.dec
+
+[LibraryClasses]
+  ArmLib
+  PcdLib
+  IoLib
+  HobLib
+  CompilerIntrinsicsLib
+  CacheMaintenanceLib
+
+[Pcd]
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight

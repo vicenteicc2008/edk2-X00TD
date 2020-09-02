@@ -12,14 +12,14 @@
 
 [Defines]
   INF_VERSION                    = 0x0001001a
-  BASE_NAME                      = RedmiNote7Dxe
+  BASE_NAME                      = AsusMaxProM1Dxe
   FILE_GUID                      = 422BB380-0FFB-41EC-B86E-AE70F8A02DA3
   MODULE_TYPE                    = DXE_DRIVER
   VERSION_STRING                 = 1.0
-  ENTRY_POINT                    = RedmiNote7EntryPoint
+  ENTRY_POINT                    = AsusMaxProM1EntryPoint
 
 [Sources.common]
-  RedmiNote7Dxe.c
+  AsusMaxProM1Dxe.c
 
 [Packages]
   EmbeddedPkg/EmbeddedPkg.dec

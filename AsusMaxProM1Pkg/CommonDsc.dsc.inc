@@ -62,7 +62,7 @@
   ArmGicArchLib|ArmPkg/Library/ArmGicArchLib/ArmGicArchLib.inf
   ArmPlatformStackLib|ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib.inf
   ArmSmcLib|ArmPkg/Library/ArmSmcLib/ArmSmcLib.inf
-  ArmMmuLib|RedmiNote7Pkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
+  ArmMmuLib|AsusMaxProM1Pkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
 
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
@@ -163,7 +163,7 @@
   ## Fixed compile error after upgrade to 14.10
   PlatformPeiLib|ArmPlatformPkg/PlatformPei/PlatformPeiLib.inf
   PcdLib|MdePkg/Library/PeiPcdLib/PeiPcdLib.inf
-  ArmMmuLib|RedmiNote7Pkg/Library/ArmMmuLib/ArmMmuPeiLib.inf
+  ArmMmuLib|AsusMaxProM1Pkg/Library/ArmMmuLib/ArmMmuPeiLib.inf
   BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
 
 [LibraryClasses.common.DXE_CORE]

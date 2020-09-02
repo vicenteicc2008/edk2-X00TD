@@ -12,7 +12,7 @@
 
 [Defines]
   DEC_SPECIFICATION              = 0x0001001a
-  PACKAGE_NAME                   = RedmiNote7Pkg
+  PACKAGE_NAME                   = AsusMaxProM1Pkg
   PACKAGE_GUID                   = 7eb1de03-3910-4d1d-84ce-c17b53636b9a
   PACKAGE_VERSION                = 0.1
 
@@ -29,7 +29,7 @@
   Include                        # Root include for the package
 
 [Guids.common]
-  gRedmiNote7PkgTokenSpaceGuid        = { 0x99a14446, 0xaad7, 0xe460, {0xb4, 0xe5, 0x1f, 0x79, 0xaa, 0xa4, 0x93, 0xfd } }
+  gAsusMaxProM1PkgTokenSpaceGuid        = { 0x99a14446, 0xaad7, 0xe460, {0xb4, 0xe5, 0x1f, 0x79, 0xaa, 0xa4, 0x93, 0xfd } }
 
 [Protocols]
   gEFIDroidKeypadDeviceProtocolGuid = { 0xb27625b5, 0x0b6c, 0x4614, { 0xaa, 0x3c, 0x33, 0x13, 0xb5, 0x1d, 0x36, 0x46 } }
@@ -37,9 +37,9 @@
 
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x00400000|UINT32|0x0000a400
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340|UINT32|0x0000a402
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|2340|UINT32|0x0000a405
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x00400000|UINT32|0x0000a400
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2160|UINT32|0x0000a402
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|2160|UINT32|0x0000a405

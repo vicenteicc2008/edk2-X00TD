@@ -16,7 +16,7 @@
   MdeModulePkg/MdeModulePkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
-  RedmiNote7Pkg/RedmiNote7Pkg.dec
+  AsusMaxProM1Pkg/AsusMaxProM1Pkg.dec
 
 [LibraryClasses]
   BaseLib
@@ -35,9 +35,9 @@
   gEfiCpuArchProtocolGuid
 
 [FixedPcd]
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gAsusMaxProM1PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
 
 [Guids]
   gEfiMdeModulePkgTokenSpaceGuid

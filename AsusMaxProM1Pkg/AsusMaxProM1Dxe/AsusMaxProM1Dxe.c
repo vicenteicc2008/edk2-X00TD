@@ -34,7 +34,7 @@
 #include <Protocol/LoadedImage.h>
 #include <Protocol/PlatformBootManager.h>
 
-#include "RedmiNote7Dxe.h"
+#include "AsusMaxProM1Dxe.h"
 
 EFI_CPU_ARCH_PROTOCOL     *gCpu;
 
@@ -71,7 +71,7 @@ OnEndOfDxe (
 
 EFI_STATUS
 EFIAPI
-RedmiNote7EntryPoint (
+AsusMaxProM1EntryPoint (
   IN EFI_HANDLE         ImageHandle,
   IN EFI_SYSTEM_TABLE   *SystemTable
   )
