@@ -25,13 +25,19 @@
 ################################################################################
 
 [FD.AsusMaxProM1Pkg_UEFI]
-BaseAddress   = 0xd0000000|gArmTokenSpaceGuid.PcdFdBaseAddress  # The base address of the Firmware in NOR Flash.
-Size          = 0x01000000|gArmTokenSpaceGuid.PcdFdSize         # The size in bytes of the FLASH Device
+BaseAddress   = 0x80200000|gArmTokenSpaceGuid.PcdFdBaseAddress  # The base address of the Firmware in NOR Flash.
+Size          = 0x00120000|gArmTokenSpaceGuid.PcdFdSize         # The size in bytes of the FLASH Device
 ErasePolarity = 1
 
 # This one is tricky, it must be: BlockSize * NumBlocks = Size
 BlockSize     = 0x00001000
 NumBlocks     = 0x1000
+BlockSize     = 0x200
+NumBlocks     = 0x900
+
+# 512 bytes of configuration header & 8 bytes of image header
+0x00000000|0x00120000
+gArmTokenSpaceGuid.PcdFvBaseAddress|gArmTokenSpaceGuid.PcdFvSize
 
 ################################################################################
 #
