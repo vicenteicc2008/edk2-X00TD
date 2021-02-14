@@ -626,9 +626,9 @@ READ_LOCK_STATUS   = TRUE
       SECTION UI = "UsbConfigDxe"
     }
 
-  # Linux (pretends to be uefi shell)
+  # Windows (pretends to be uefi shell)
   FILE APPLICATION = 7C04A583-9E3E-4f1c-AD65-E05268D0B4D1 {
-    SECTION PE32 = AsusMaxProM1Pkg/linux.efi
+    SECTION PE32 = AsusMaxProM1Pkg/bootaa64.efi
   }
 
 [FV.FVMAIN_COMPACT]
