@@ -90,10 +90,8 @@ FV = FVMAIN_COMPACT
 #
 ################################################################################
 
-[FV.FvMain]
-BlockSize          = 0x40
-NumBlocks          = 0         # This FV gets compressed so make it just big enough
-FvAlignment        = 8         # FV alignment and FV attributes setting.
+[FV.FVMAIN_COMPACT]
+FvAlignment        = 8
 ERASE_POLARITY     = 1
 MEMORY_MAPPED      = TRUE
 STICKY_WRITE       = TRUE
