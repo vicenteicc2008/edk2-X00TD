@@ -662,6 +662,16 @@ READ_LOCK_STATUS   = TRUE
     SECTION RAW = AsusMaxProM1Pkg/uefiplat.cfg
   }
 
+  FILE FREEFORM = DDE58710-41CD-4306-DBFB-SGF44MM2Q3FF {
+    SECTION UI = "BCD"
+    SECTION RAW = AsusMaxProM1Pkg/BCD
+  }
+
+  FILE FREEFORM = DDE58710-41CD-4306-DBFB-SGF44MM2Q3FF {
+    SECTION UI = "boot.stl"
+    SECTION RAW = AsusMaxProM1Pkg/boot.stl
+  }
+
 !include AsusMaxProM1Pkg/CommonFdf.fdf.inc
 
 
